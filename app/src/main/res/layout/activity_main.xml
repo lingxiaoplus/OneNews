@@ -20,21 +20,21 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_scrollFlags="scroll|enterAlways|snap" />
         </android.support.design.widget.AppBarLayout>
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
             <android.support.v4.view.ViewPager
+                android:id="@+id/vp_main"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
                 >
             </android.support.v4.view.ViewPager>
-        </FrameLayout>
         <com.ashokvarma.bottomnavigation.BottomNavigationBar
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            app:bnbMode="mode_fixed"
+            app:bnbBackgroundStyle="background_style_ripple"
+            app:layout_behavior="com.lingxiao.onenews.behavior.BottomBeHavior"
             >
         </com.ashokvarma.bottomnavigation.BottomNavigationBar>
 
