@@ -10,6 +10,12 @@
         android:id="@+id/tab_home"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        app:tabBackground="@color/colorPrimary"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabTextColor="#fff"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabGravity="fill"
         >
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"

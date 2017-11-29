@@ -56,9 +56,9 @@ class MainActivity : BaseActivity() {
                 .addItem(BottomNavigationItem(R.drawable.ic_svg_home, items[0])
                         .setActiveColorResource(R.color.colorPrimary))
                 .addItem( BottomNavigationItem(R.drawable.ic_svg_news, items[1])
-                        .setActiveColorResource(R.color.colorPrimaryDark))
+                        .setActiveColorResource(R.color.colorLightBlue))
                 .addItem(BottomNavigationItem(R.drawable.ic_svg_local, items[2])
-                        .setActiveColorResource(R.color.colorAccent))
+                        .setActiveColorResource(R.color.colorCyan))
                 .setFirstSelectedPosition(0)
                 .initialise();//所有的设置需在调用该方法前完成
         bottom_navigation.setTabSelectedListener(object :
